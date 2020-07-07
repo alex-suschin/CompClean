@@ -19,11 +19,8 @@
     align-items: center;
 }
 
-.logo {
-    fill: #6b35f5;
-}
-
-.logo svg {
+.logo img {
+    display: inline-block;
     width: 41px;
     height: 38px;
 }
@@ -36,6 +33,33 @@
     font-family: Gilroy;
     font-size: 18px;
     font-weight: 700;
+}
+
+.logo-fixed {
+    display: none;
+    max-width: 195px;
+    width: 100%;
+    img {
+        width: 35px;
+        height: 32px;
+        float: left;
+        margin-right: 8px;
+    }
+    span {
+        display: block;
+        margin: 4px 0 0 0;
+        color: black;
+        font-family: Gilroy;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    b {
+        display: block;
+        color: black;
+        font-family: Gilroy;
+        font-size: 10px;
+        font-weight: 400;
+    }
 }
 
 .cities {
@@ -200,12 +224,50 @@
     right: 0;
     left: 0;
     width: 100%;
+    padding: 9px 0 10px 0;
     background: #fff;
     z-index: 99;
 }
 
-.fixed .cities,
-.fixed .btn-yellow {
-    opacity: 0;
-    visibility: hidden;
+.fixed #menu-wrap {
+    width: initial;
 }
+
+.fixed .header-phone-btn .tel {
+    padding: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 10px;
+    border: none;
+}
+
+.fixed .header-phone-btn .tel::before {
+    content: none;
+}
+
+.fixed .menu a {
+    padding: 18px 38px 18px 38px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.fixed .header-phone-btn {
+    max-width: initial;
+    width: initial;
+}
+
+.fixed .header-info {
+    margin-bottom: 0;
+}
+
+// .fixed .cities,
+// .fixed .btn-yellow {
+//     opacity: 0;
+//     visibility: hidden;
+// }
