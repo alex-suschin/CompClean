@@ -1,27 +1,13 @@
 import $ from "jquery";
 import "./import/modules";
 import "./import/jquery.formstyler.min";
+import "./import/jquery.mask";
 
 
 
 $(function() {
 
-    // $(window).load(function() {
-    //     let phones = [
-    //         { 'mask': '+7 \\ \\ ###-###-##-##' }
-    //     ];
-
-    //     $('input[type=tel]').inputmask({
-    //         mask: phones,
-    //         greedy: false,
-    //         definitions: {
-    //             '#': {
-    //                 validator: '[0-9]',
-    //                 cardinality: 1
-    //             }
-    //         }
-    //     });
-    // });
+    $("input[type=tel]").mask("+7 (999) 999-9999");
 
     ymaps.ready(function() {
         var myMap = new ymaps.Map('map', {
@@ -50,10 +36,17 @@ $(function() {
 
     });
 
-    jQuery("a.scrollto").click(function() {
-        elementClick = jQuery(this).attr("href")
-        destination = jQuery(elementClick).offset().top;
-        jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 700);
+    $('.scrollto').click(function() {
+        var scroll_elem = $(this).attr('href');
+        if ($(scroll_elem).length != 0) {
+            $('html, body').animate({
+                scrollTop: $(scroll_elem).offset().top - 10
+            }, 800);
+        } else {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+        }
         return false;
     });
 
