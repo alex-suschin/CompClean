@@ -50,6 +50,17 @@ $(function() {
         return false;
     });
 
+    jQuery(function($) {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 123) {
+                $('.header').addClass('fixed');
+                $('body').css('padding-top', '123px');
+            } else if ($(this).scrollTop() < 123) {
+                $('body').css('padding-top', '0');
+                $('.header').removeClass('fixed');
+            }
+        });
+    });
 
 
     setTimeout(function() {

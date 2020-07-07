@@ -193,3 +193,19 @@
         box-shadow: 0 8px 20px rgba(187, 207, 222, 0.38);
     }
 }
+
+.fixed.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 99;
+}
+
+.fixed .cities,
+.fixed .btn-yellow {
+    opacity: 0;
+    visibility: hidden;
+}

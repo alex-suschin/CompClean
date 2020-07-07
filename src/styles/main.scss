@@ -113,3 +113,108 @@ ul {
     max-width: 1170px;
     position: relative;
 }
+
+#popup-callback {}
+
+.popup__dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 761px;
+    height: 100vh;
+}
+
+.popup__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 761px;
+    width: 100%;
+    padding: 88px 15px 66px 15px;
+    background-color: white;
+    border-radius: 2px;
+    border: none;
+}
+
+.close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.popup__close {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    font-size: 25px;
+    font-weight: normal;
+    text-shadow: none;
+    cursor: pointer;
+    transition: all .3s;
+    opacity: 1;
+}
+
+.popup__title {
+    margin-bottom: 26px;
+    color: black;
+    text-align: center;
+    font-family: Circe;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.form-popup {
+    input {
+        display: block;
+        max-width: 216px;
+        padding: 13px 0 13px 0;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 100%;
+        color: black;
+        font-family: Circe;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 400;
+        background-color: white;
+        border: 2px solid #c4c4c4;
+        border-radius: 4px;
+    }
+    .btn-yellow {
+        max-width: 216px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 15px 0 15px 0;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+        outline: none;
+    }
+    .agree {
+        color: black;
+        font-family: Circe;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        margin: 0 auto;
+    }
+}
+
+#popup-thanks {
+    .btn-yellow {
+        max-width: 216px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 15px 0 15px 0;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+        outline: none;
+    }
+}

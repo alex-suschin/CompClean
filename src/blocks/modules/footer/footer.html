@@ -91,13 +91,43 @@
                         </li>
                     </ul>
                     <a href="tel:+79271318032" class="tel-footer">+7 (927) 131-80-32</a>
-                    <a href="#" class="btn-yellow">Вызвать мастера</a>
+                    <a href="javascript: void(0);" data-toggle="modal" data-target="#popup-callback" class="btn-yellow">Вызвать мастера</a>
                 </div>
                 <div class="footer-info--bottom">
                     <a href="#">Политика конфиденциальности</a>
                     <span>Представленная информация на сайте не является публичной офертой</span>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="popup-callback" class="modal fade">
+    <div class="modal-dialog popup__dialog" role="document">
+        <div class="modal-content popup__content">
+            <div class="popup__close close" data-dismiss="modal">×</div>
+            <div class="popup__title">
+                Заполните форму ниже и мы перезвоним<br> Вам за 5 минут
+            </div>
+            <form class="form-popup" method="POST" action="">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш номер">
+                <button type="submit" class="btn-yellow">Вызвать мастера</button>
+                <div class="agree">Нажимая кнопку “Вызвать мастера” Вы соглашаетесь на обработку<br> данных.</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="popup-thanks" class="modal fade">
+    <div class="modal-dialog popup__dialog" role="document">
+        <div class="modal-content popup__content">
+            <div class="popup__close close" data-dismiss="modal">×</div>
+            <div class="popup__title">
+                Мы перезвоним Вам за 5 минут
+            </div>
+            <button data-dismiss="modal" class="btn-yellow">Хорошо</button>
         </div>
     </div>
 </div>
