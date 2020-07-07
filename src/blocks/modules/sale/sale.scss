@@ -1,0 +1,61 @@
+.sale {
+    margin-bottom: 70px;
+    .title {
+        margin-bottom: 20px;
+        color: black;
+        text-align: left;
+        font-family: Circe;
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 1.25;
+    }
+    .title span {
+        color: #6b35f5;
+    }
+    .form {
+        max-width: initial;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        background: transparent;
+        input {
+            display: inline-block;
+            vertical-align: top;
+            max-width: 292px;
+            width: 100%;
+            margin: 0 8px 0 0;
+            padding: 15px 20px 16px 22px;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            text-align: left;
+        }
+        button[type=submit] {
+            max-width: 215px;
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            padding: 16px 0 15px 0;
+            font-size: 16px;
+        }
+        .agree {
+            margin: 11px 0 0 4px;
+            text-align: left;
+        }
+    }
+}
+
+.sale-box {
+    width: 100%;
+    padding: 37px 60px 43px 66px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0 8px 20px rgba(187, 207, 222, 0.28);
+}

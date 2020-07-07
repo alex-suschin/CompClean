@@ -90,3 +90,26 @@ ul {
 .btn-yellow:hover {
     color: #fff;
 }
+
+.btn-dashed {
+    display: block;
+    max-width: 227px;
+    width: 100%;
+    padding: 14px 0 12px 0;
+    border: 2px dotted #9e9c9c;
+    border-radius: 4px;
+    color: black;
+    text-align: center;
+    font-family: Circe;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-dashed:hover {
+    color: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    position: relative;
+}

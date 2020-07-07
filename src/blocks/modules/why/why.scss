@@ -1,0 +1,32 @@
+.why {
+    padding: 86px 0 49px 0;
+    .title {
+        margin-bottom: 21px;
+        text-align: left;
+        font-family: Circe;
+        font-size: 38px;
+        font-weight: 900;
+        color: black;
+    }
+    .title span {
+        color: #6b35f5;
+    }
+    .desc {
+        color: black;
+        font-family: Circe;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+}
+
+.why-box {
+    align-items: center;
+    img {
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+}

@@ -23,6 +23,12 @@
     }
 }
 
+.top-wrap-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .top-wrap__left {
     width: 57%;
 }
@@ -101,7 +107,7 @@
     max-width: 229px;
     width: 100%;
     height: 464px;
-    background: url(../img/man.png) no-repeat center;
+    background: url(../img/man.png) no-repeat top center;
     background-size: cover;
     z-index: -1;
 }
