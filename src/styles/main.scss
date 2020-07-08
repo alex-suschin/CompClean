@@ -206,6 +206,17 @@ ul {
     }
 }
 
+form span {
+    display: block;
+}
+
+.form-sale span {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    max-width: 292px;
+    width: 100%;
+}
+
 @media (min-width: 576px) {
     .modal-dialog {
         margin: 0 auto;

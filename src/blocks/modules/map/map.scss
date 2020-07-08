@@ -86,13 +86,18 @@
         border: 1px solid #e8e8e8;
         border-radius: 4px;
     }
-    input:first-child {
+    .map-span-1 {
+        display: inline-block;
         max-width: 207px;
         width: 100%;
         margin-right: 3px;
     }
-    input:nth-child(2) {
+    .map-span-2 {
+        display: inline-block;
         max-width: 153px;
+        width: 100%;
+    }
+    .map-span-2 input {
         width: 100%;
     }
     textarea {
@@ -128,6 +133,8 @@
     align-items: center;
     span {
         display: inline-block;
+        max-width: initial;
+        width: auto;
         margin: 0px 0 0 9px;
         color: black;
         text-align: left;

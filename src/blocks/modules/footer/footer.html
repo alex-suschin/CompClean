@@ -47,9 +47,10 @@
             <div class="popup__title">
                 Заполните форму ниже и мы перезвоним<br> Вам за 5 минут
             </div>
-            <form class="form-popup" method="POST" action="">
-                <input type="text" placeholder="Ваше имя">
-                <input type="tel" placeholder="Ваш номер">
+            <form class="form-popup" method="POST" action="/">
+                <input type="hidden" value="Форма в попапе">
+                <span><input type="text" placeholder="Ваше имя"></span>
+                <span><input type="tel" placeholder="Ваш номер"></span>
                 <button type="submit" class="btn-yellow">Вызвать мастера</button>
                 <div class="agree">Нажимая кнопку “Вызвать мастера” Вы соглашаетесь на обработку<br> данных.</div>
             </form>

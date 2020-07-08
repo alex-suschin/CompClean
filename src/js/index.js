@@ -101,6 +101,14 @@ $(function() {
             });
         }
 
+        if (width < '768') {
+            $('.map-contacts').insertAfter($(".bottom-form"));
+        }
+
+        if (width > '767') {
+            $('.map-contacts').prependTo($(".map"));
+        }
+
     });
 
 });

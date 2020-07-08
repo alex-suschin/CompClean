@@ -123,8 +123,16 @@
         margin-bottom: 15px;
     }
     .menu a {
+        padding: 5px 15px 5px 15px;
         font-size: 22px;
         color: #fff;
+    }
+    .menu a:hover {
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu a:active {
+        color: #6b35f5;
     }
     #menu-wrap.active {
         transform: translate(0, 0);
@@ -439,11 +447,52 @@
         font-size: 26px;
     }
     .map-contacts {
-        max-width: 320px;
+        position: static;
+        max-width: 290px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        height: auto;
         padding: 25px 15px 20px 15px;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
     }
     .map-contacts .title {
         font-size: 24px;
         line-height: 1.1;
+    }
+    .form-contacts .map-span-1 {
+        max-width: 100%;
+        input {
+            width: 100%;
+        }
+    }
+    .form-contacts .map-span-2 {
+        max-width: 100%;
+        input {
+            width: 100%;
+        }
+    }
+    .map-contacts .desc br {
+        display: none;
+    }
+    .map {
+        max-height: 350px;
+        min-height: 350px;
+    }
+    .agree-box {
+        flex-direction: column;
+    }
+    .form-contacts .btn-yellow {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .agree-box span {
+        display: block;
+        margin: 0;
+        text-align: center;
     }
 }
