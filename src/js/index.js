@@ -50,6 +50,12 @@ $(function() {
         return false;
     });
 
+    // $("a[data-toggle='modal']").on('click', function() {
+    //     $(".form-popup .hidden-input").val($(this).data("form"));
+    //     return false;
+    // });
+
+
 
 
 
@@ -66,19 +72,19 @@ $(function() {
                 $(window).scroll(function() {
                     if ($(this).scrollTop() > 123) {
                         $('.header').addClass('fixed');
-                        $('.header-info .cities').hide(100);
-                        $('.header .btn-yellow').hide(100);
-                        $('.header .logo-fixed').show(100);
-                        $('.header .logo').hide(100);
+                        $('.header-info .cities').hide();
+                        $('.header .btn-yellow').hide();
+                        $('.header .logo-fixed').show();
+                        $('.header .logo').hide();
                         $('#menu-wrap').insertAfter($(".header .logo-fixed"));
                         $('body').css('padding-top', '51px');
                     } else if ($(this).scrollTop() < 123) {
                         $('body').css('padding-top', '123px');
                         $('.header').removeClass('fixed');
-                        $('.header-info .cities').show(100);
-                        $('.header .btn-yellow').show(100);
-                        $('.header .logo').show(100);
-                        $('.header .logo-fixed').hide(100);
+                        $('.header-info .cities').show();
+                        $('.header .btn-yellow').show();
+                        $('.header .logo').show();
+                        $('.header .logo-fixed').hide();
                         $('#menu-wrap').insertAfter($(".header-info"));
                     }
                 });
@@ -95,9 +101,14 @@ $(function() {
                     $('html').addClass('ov-hidden');
                 } else {
                     $('#menu-wrap').removeClass('active');
-                    $('#menu-wrap').find('.showed').removeClass('showed');
                     $('html').removeClass('ov-hidden');
                 }
+            });
+
+            $('.menu a').click(function() {
+                $('#hamburger-icon').removeClass('active');
+                $('#menu-wrap').removeClass('active');
+                $('html').removeClass('ov-hidden');
             });
         }
 

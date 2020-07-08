@@ -1,3 +1,4 @@
+<!-- BEGIN footer -->
 <div class="footer">
     <div class="container">
         <div class="footer-box">
@@ -24,7 +25,7 @@
                             <a class="scrollto" href="#rewiews">Отзывы</a>
                         </li>
                         <li>
-                            <a class="scrollto" href="#map">Контакты</a>
+                            <a class="scrollto" href="#contacts">Контакты</a>
                         </li>
                     </ul>
                     <a href="tel:+79271318032" class="tel-footer">+7 (927) 131-80-32</a>
@@ -38,7 +39,7 @@
         </div>
     </div>
 </div>
-
+<!-- END footer -->
 
 <div id="popup-callback" class="modal fade">
     <div class="modal-dialog popup__dialog" role="document">
@@ -48,9 +49,9 @@
                 Заполните форму ниже и мы перезвоним<br> Вам за 5 минут
             </div>
             <form class="form-popup" method="POST" action="/">
-                <input type="hidden" value="Форма в попапе">
+                <input type="hidden" class="hidden-input" value="Форма в попапе">
                 <span><input type="text" placeholder="Ваше имя"></span>
-                <span><input type="tel" placeholder="Ваш номер"></span>
+                <span><input type="tel" required="required" placeholder="Ваш номер"></span>
                 <button type="submit" class="btn-yellow">Вызвать мастера</button>
                 <div class="agree">Нажимая кнопку “Вызвать мастера” Вы соглашаетесь на обработку<br> данных.</div>
             </form>

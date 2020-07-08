@@ -1,5 +1,6 @@
+<!-- BEGIN map -->
 <div class="map" id="map">
-    <div class="map-contacts">
+    <div class="map-contacts" id="contacts">
         <div class="title">Мои контакты</div>
         <div class="desc">Свяжитесь со мной любым удобным для <br> Вас способом</div>
         <a class="phone-contacts" href="tel:88126032681">8 (812) 603-2681</a>
@@ -7,7 +8,7 @@
         <form class="form-contacts" method="POST" action="/">
             <input type="hidden" value="Форма в блоке с картой">
             <span class="map-span-1"><input type="text" placeholder="Ваше имя"></span>
-            <span class="map-span-2"><input type="tel" placeholder="Ваш телефон"></span>
+            <span class="map-span-2"><input type="tel" required="required" placeholder="Ваш телефон"></span>
             <textarea name="message" placeholder="Ваш комментарий"></textarea>
             <div class="agree-box">
                 <a href="#" class="btn-yellow">Отправить</a>
@@ -17,3 +18,4 @@
         </form>
     </div>
 </div>
+<!-- END map -->
