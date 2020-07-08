@@ -1,5 +1,12 @@
 .header {
     padding: 23px 0 11px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 99;
     .btn-yellow {
         display: inline-block;
         vertical-align: top;
@@ -264,6 +271,68 @@
 
 .fixed .header-info {
     margin-bottom: 0;
+}
+
+.header-phone-btn--mobile {
+    display: none;
+}
+
+.cities--mobile {
+    display: none!important;
+}
+
+#hamburger-icon {
+    position: absolute;
+    right: 0;
+    top: 9px;
+    display: none;
+    width: 18px;
+    height: 14px;
+}
+
+#hamburger-icon .line {
+    position: absolute;
+    left: 0;
+    display: block;
+    background: #6b35f5;
+    width: 18px;
+    height: 2px;
+    border-radius: 4px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+.line.line-1 {
+    top: 0;
+}
+
+.line.line-2 {
+    top: 50%;
+}
+
+.line.line-3 {
+    top: 100%;
+}
+
+#hamburger-icon.active .line-1 {
+    transform: translateY(7px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(7px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(7px) translateX(0) rotate(45deg);
+    -ms-transform: translateY(7px) translateX(0) rotate(45deg);
+    -o-transform: translateY(7px) translateX(0) rotate(45deg);
+}
+
+#hamburger-icon.active .line-2 {
+    opacity: 0;
+}
+
+#hamburger-icon.active .line-3 {
+    transform: translateY(-7px) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-7px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-7px) translateX(0) rotate(-45deg);
+    -ms-transform: translateY(-7px) translateX(0) rotate(-45deg);
+    -o-transform: translateY(-7px) translateX(0) rotate(-45deg);
 }
 
 // .fixed .cities,

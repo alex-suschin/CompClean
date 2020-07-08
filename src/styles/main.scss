@@ -7,6 +7,7 @@
 @import "../blocks/modules";
 body {
     position: relative;
+    padding-top: 123px;
     height: 100%;
     font-family: 'Circe', sans-serif;
     font-size: 20px;
@@ -109,9 +110,11 @@ ul {
     color: #fff;
 }
 
-.container {
-    max-width: 1170px;
-    position: relative;
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+        position: relative;
+    }
 }
 
 #popup-callback {}
@@ -160,6 +163,10 @@ ul {
     font-size: 18px;
     line-height: 1.25;
     font-weight: 700;
+}
+
+.ov-hidden {
+    overflow: hidden;
 }
 
 .form-popup {
@@ -218,3 +225,5 @@ ul {
         outline: none;
     }
 }
+
+@import "base/media";

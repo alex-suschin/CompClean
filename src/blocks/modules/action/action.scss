@@ -1,6 +1,9 @@
 .action {
     position: relative;
     padding: 44px 0 40px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     z-index: 5;
     .title {

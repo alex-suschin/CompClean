@@ -50,31 +50,57 @@ $(function() {
         return false;
     });
 
-    jQuery(function($) {
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 123) {
-                $('.header').addClass('fixed');
-                $('.cities').hide(100);
-                $('.header .btn-yellow').hide(100);
-                $('.header .logo-fixed').show(100);
-                $('.header .logo').hide(100);
-                $('#menu-wrap').insertAfter($(".header .logo-fixed"));
-                $('body').css('padding-top', '123px');
-            } else if ($(this).scrollTop() < 123) {
-                $('body').css('padding-top', '0');
-                $('.header').removeClass('fixed');
-                $('.cities').show(100);
-                $('.header .btn-yellow').show(100);
-                $('.header .logo').show(100);
-                $('.header .logo-fixed').hide(100);
-                $('#menu-wrap').insertAfter($(".header-info"));
-            }
-        });
-    });
+
 
 
     setTimeout(function() {
         $('select').styler();
     }, 100)
+
+    $(window).on('load resize', function() {
+
+        var width = $(window).width();
+
+        if (width > '991') {
+            jQuery(function($) {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 123) {
+                        $('.header').addClass('fixed');
+                        $('.header-info .cities').hide(100);
+                        $('.header .btn-yellow').hide(100);
+                        $('.header .logo-fixed').show(100);
+                        $('.header .logo').hide(100);
+                        $('#menu-wrap').insertAfter($(".header .logo-fixed"));
+                        $('body').css('padding-top', '51px');
+                    } else if ($(this).scrollTop() < 123) {
+                        $('body').css('padding-top', '123px');
+                        $('.header').removeClass('fixed');
+                        $('.header-info .cities').show(100);
+                        $('.header .btn-yellow').show(100);
+                        $('.header .logo').show(100);
+                        $('.header .logo-fixed').hide(100);
+                        $('#menu-wrap').insertAfter($(".header-info"));
+                    }
+                });
+            });
+        }
+
+
+
+        if (width < '992') {
+            $('#hamburger-icon').click(function() {
+                $(this).toggleClass('active');
+                if ($(this).hasClass('active')) {
+                    $('#menu-wrap').addClass('active');
+                    $('html').addClass('ov-hidden');
+                } else {
+                    $('#menu-wrap').removeClass('active');
+                    $('#menu-wrap').find('.showed').removeClass('showed');
+                    $('html').removeClass('ov-hidden');
+                }
+            });
+        }
+
+    });
 
 });
